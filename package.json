@@ -1,0 +1,12 @@
+{
+  "name": "debtwise",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "api": "json-server --watch db.json --port 3000",
+    "start": "json-server db.json --host 0.0.0.0 --port ${PORT:-3000}",
+    "test": "node --test --experimental-test-coverage"
+  },
+  "dependencies": { "json-server": "0.17.4" },
+  "license": "MIT"
+}
